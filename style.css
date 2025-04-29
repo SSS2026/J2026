@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Réinitialisation de certaines marges et paddings */
+/* Réinitialisation des styles de base */
 * {
   margin: 0;
   padding: 0;
@@ -8,42 +8,89 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Arial', sans-serif; /* Police simple et moderne */
+  background-color: #ffffff; /* Fond blanc */
+  color: #333; /* Texte gris foncé pour une meilleure lisibilité */
   line-height: 1.6;
-  padding: 20px;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* En-tête */
 header {
-  background-color: #0073e6;
-  color: white;
-  padding: 10px 0;
+  background-color: #89CFF0; /* Bleu ciel */
+  color: #fff;
+  padding: 50px 0;
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 15px;
+header .slogan {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #f4f4f4;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+/* Section Overview */
+.overview {
+  padding: 40px 0;
+  background-color: #f9f9f9; /* Fond gris clair pour cette section */
+  text-align: center;
 }
 
-h1, h2 {
+.overview h2 {
+  font-size: 2.5em;
   color: #333;
+  margin-bottom: 20px;
 }
 
+.overview p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
 footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #777;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header .slogan {
+    font-size: 1.1em;
+  }
+
+  .overview h2 {
+    font-size: 2em;
+  }
+
+  .overview p {
+    font-size: 1em;
+  }
 }
