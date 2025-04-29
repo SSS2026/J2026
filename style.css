@@ -65,35 +65,46 @@ header .btn:hover {
   background-color: #45a049; /* Couleur de survol */
 }
 
-/* Section Overview */
-.overview {
+/* Section des boutons */
+.buttons-section {
   background-color: #ffffff;
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
 }
 
-.overview h2 {
+.buttons-section h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #333; /* Couleur du titre */
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.overview .content {
-  background-color: #fafafa;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 0 auto;
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.overview p {
-  font-size: 1.2em;
-  color: #555; /* Texte plus foncé pour la lisibilité */
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
+.btn-large {
+  display: block;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-large:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+}
+
+.btn-large:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(72, 172, 255, 0.6);
 }
 
 /* Footer */
@@ -108,12 +119,6 @@ footer p {
   font-size: 1em;
 }
 
-/* Effets de hover */
-.overview .content:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 /* Responsive design pour mobile */
 @media (max-width: 768px) {
   header h1 {
@@ -124,12 +129,13 @@ footer p {
     font-size: 1.2em;
   }
 
-  .overview h2 {
+  .buttons-section h2 {
     font-size: 2em;
   }
 
-  .overview p {
-    font-size: 1em;
+  .btn-large {
+    font-size: 1.3em;
+    padding: 15px;
   }
 
   header .btn {
@@ -137,4 +143,3 @@ footer p {
     padding: 8px 20px;
   }
 }
-
