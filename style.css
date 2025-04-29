@@ -40,14 +40,14 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5em;
   margin-bottom: 0.3em;
-  color: #333; /* Texte en gris foncé pour le titre */
+  color: #a3c8e3; /* Texte en gris foncé pour le titre */
 }
 
 header .slogan {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 20px;
-  color: #ddd; /* Texte gris clair pour le slogan */
+  color: #a3c8e3; /* Texte gris clair pour le slogan */
 }
 
 header .btn {
