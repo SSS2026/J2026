@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Réinitialisation des styles de base */
+/* Réinitialisation de styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +8,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* Police simple et moderne */
-  background-color: #ffffff; /* Fond blanc */
-  color: #333; /* Texte gris foncé pour une meilleure lisibilité */
+  font-family: 'Roboto', sans-serif; /* Font Roboto pour le texte */
+  background-color: #f4f4f9; /* Fond gris clair */
+  color: #333; /* Texte gris foncé */
   line-height: 1.6;
 }
 
@@ -20,44 +20,73 @@ body {
   max-width: 1200px;
 }
 
-/* En-tête */
+/* En-tête avec image de fond */
 header {
-  background-color: #89CFF0; /* Bleu ciel */
+  background: url('https://via.placeholder.com/1600x600') center/cover no-repeat; /* Image de fond */
   color: #fff;
-  padding: 50px 0;
+  padding: 100px 0;
   text-align: center;
+  position: relative;
+}
+
+header .header-content {
+  position: relative;
+  z-index: 2;
 }
 
 header h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 0.3em;
 }
 
 header .slogan {
-  font-style: italic;
-  font-size: 1.2em;
-  color: #f4f4f4;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+header .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #4CAF50; /* Vert */
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+  background-color: #45a049; /* Couleur de survol */
 }
 
 /* Section Overview */
 .overview {
-  padding: 40px 0;
-  background-color: #f9f9f9; /* Fond gris clair pour cette section */
+  background-color: #ffffff;
+  padding: 80px 0;
   text-align: center;
 }
 
 .overview h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
-  color: #333;
   margin-bottom: 20px;
+}
+
+.overview .content {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .overview p {
   font-size: 1.2em;
   color: #555;
   line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 /* Footer */
@@ -72,18 +101,20 @@ footer p {
   font-size: 1em;
 }
 
+/* Effets de hover */
+.overview .content:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 /* Responsive design pour mobile */
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
   header h1 {
     font-size: 2.5em;
   }
 
   header .slogan {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .overview h2 {
@@ -92,5 +123,10 @@ footer p {
 
   .overview p {
     font-size: 1em;
+  }
+
+  header .btn {
+    font-size: 1em;
+    padding: 8px 20px;
   }
 }
