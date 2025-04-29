@@ -23,10 +23,12 @@ body {
 /* En-tête avec image de fond */
 header {
   background: url('https://via.placeholder.com/1600x600') center/cover no-repeat; /* Image de fond */
+  background-size: cover;
   color: #fff;
   padding: 100px 0;
   text-align: center;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.3); /* Fond semi-transparent pour améliorer le contraste du texte */
 }
 
 header .header-content {
@@ -38,12 +40,14 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5em;
   margin-bottom: 0.3em;
+  color: #333; /* Texte en gris foncé pour le titre */
 }
 
 header .slogan {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 20px;
+  color: #ddd; /* Texte gris clair pour le slogan */
 }
 
 header .btn {
@@ -72,6 +76,7 @@ header .btn:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #333; /* Couleur du titre */
 }
 
 .overview .content {
@@ -85,8 +90,10 @@ header .btn:hover {
 
 .overview p {
   font-size: 1.2em;
-  color: #555;
+  color: #555; /* Texte plus foncé pour la lisibilité */
   line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Footer */
@@ -130,3 +137,4 @@ footer p {
     padding: 8px 20px;
   }
 }
+
