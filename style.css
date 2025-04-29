@@ -8,9 +8,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Font Roboto pour le texte */
-  background-color: #f4f4f9; /* Fond gris clair */
-  color: #333; /* Texte gris foncé */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -22,13 +22,13 @@ body {
 
 /* En-tête avec image de fond */
 header {
-  background: url('https://via.placeholder.com/1600x600') center/cover no-repeat; /* Image de fond */
+  background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
   background-size: cover;
   color: #fff;
   padding: 100px 0;
   text-align: center;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3); /* Fond semi-transparent pour améliorer le contraste du texte */
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 header .header-content {
@@ -40,20 +40,20 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5em;
   margin-bottom: 0.3em;
-  color: #a3c8e3; /* Texte en gris foncé pour le titre */
+  color: #333;
 }
 
 header .slogan {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 20px;
-  color: #a3c8e3; /* Texte gris clair pour le slogan */
+  color: #a3c8e3; /* Bleu ciel */
 }
 
 header .btn {
   display: inline-block;
   padding: 10px 25px;
-  background-color: #4CAF50; /* Vert */
+  background-color: #4CAF50;
   color: #fff;
   font-size: 1.1em;
   text-decoration: none;
@@ -62,7 +62,7 @@ header .btn {
 }
 
 header .btn:hover {
-  background-color: #45a049; /* Couleur de survol */
+  background-color: #45a049;
 }
 
 /* Section des boutons */
@@ -88,7 +88,7 @@ header .btn:hover {
 .btn-large {
   display: block;
   padding: 20px;
-  background-color: #4CAF50;
+  background-color: #a3c8e3; /* Bleu ciel pour les boutons */
   color: white;
   text-align: center;
   font-size: 1.5em;
@@ -98,13 +98,32 @@ header .btn:hover {
 }
 
 .btn-large:hover {
-  background-color: #45a049;
+  background-color: #83a8c9; /* Un bleu plus foncé au survol */
   transform: translateY(-5px);
 }
 
 .btn-large:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(72, 172, 255, 0.6);
+}
+
+/* Contenu des sections */
+.section-content {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-content p {
+  font-size: 1.2em;
+  color: #555;
 }
 
 /* Footer */
@@ -136,10 +155,5 @@ footer p {
   .btn-large {
     font-size: 1.3em;
     padding: 15px;
-  }
-
-  header .btn {
-    font-size: 1em;
-    padding: 8px 20px;
   }
 }
